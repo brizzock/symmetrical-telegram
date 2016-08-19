@@ -1,0 +1,1 @@
+"c:\program files\internet explorer\iexplore.exe" http://boxstarter.org/package/nr/url?https://gist.githubusercontent.com/brizzock/516c13e68b094a92f9a8cf2436e4b008/raw/586a76f2a2e969a5c4ded0a1af2330810e5bdcc4/cinst-intune-brcd.txt
