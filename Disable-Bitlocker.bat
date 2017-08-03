@@ -39,6 +39,9 @@ exit %errorlevel%
 echo Bitlocker Decrypt command succesfully sent.
 echo Bitlocker Decrypt command succesfully sent.   >> %current%disable-bitlocker.log
 manage-bde -status c: >> %current%disable-bitlocker.log
+@echo on
+manage-bde -status c:
+@echo off
 
 echo press any key to continue...
 pause
