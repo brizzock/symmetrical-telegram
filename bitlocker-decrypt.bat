@@ -1,4 +1,4 @@
-@echo off
+﻿@echo off
 Setlocal
 Set current=%~dp0
 
@@ -7,9 +7,13 @@ rem run script as admin. Decrypts the drive and turns off BitLocker. All key pro
 
 TITLE Disable-Bitlocker
 
-
-manage-bde –off C: >> current%disable-bitlocker.log
-
+gpupdate /force
+manage-bde c: -off
 
 echo %errorlevel% >> %current%disable-bitlocker.log
+
+if %errorlevel% NEQ 0 goto end
+
+:end
 exit %errorlevel%
+
