@@ -14,7 +14,7 @@ echo %errorlevel% >> %current%disable-bitlocker.log
 
 
 if %errorlevel% NEQ 0 goto fail
-else goto success
+if %errorlevel% EQU 0 goto success
 
 
 :fail
