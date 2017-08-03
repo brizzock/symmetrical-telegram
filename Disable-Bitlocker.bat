@@ -23,7 +23,11 @@ echo this script must be run as ADMIN (right-click Run as Administrator)
 
 echo Bitlocker Decrypt command failed. >> %current%disable-bitlocker.log 
 echo this script must be run as ADMIN (right-click Run as Administrator)   >> %current%disable-bitlocker.log
+
 manage-bde -status c: >> %current%disable-bitlocker.log
+@echo on
+manage-bde -status c:
+@echo off
 
 echo press any key to continue...
 pause
